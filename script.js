@@ -44,7 +44,7 @@ function displayProjects(xml) {
 
   projects.forEach((projet) => {
     var element = document.createElement("div");
-    element.className = "realisations";
+    element.className = "realisations flex-col";
 
     var titre = document.createElement("h2");
     titre.textContent = projet.querySelector("titre").textContent;
