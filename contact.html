@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inder&family=Kaushan+Script&family=Khmer&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <header class="header"></header>
+
+    <main class="flex-col background contact">
+      <h1 class="khmer-regular contact">Me Contacter</h1>
+      <div class="contact-border">
+        <form method="post" action="/action_page.php" class="flex-col">
+          <input
+            type="text"
+            id="firstName"
+            name="firstName"
+            placeholder="nom"
+            autocomplete="name"
+            required
+            class="contact-form khmer-regular"
+          />
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            placeholder="prénom"
+            autocomplete="name"
+            required
+            class="contact-form khmer-regular"
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="e.mail"
+            autocomplete="email"
+            required
+            class="contact-form khmer-regular"
+          />
+          <textarea class="contact contact-form khmer-regular" placeholder="message" required></textarea>
+          <button class="contact-form contact-form-button khmer-regular">Envoyer</button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer"></footer>
+    <script src="script.js"></script>
+  </body>
+</html>

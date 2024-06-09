@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE projets
+[
+	<!ELEMENT projets (projet*)>
+		<!ELEMENT projet (titre, description, lienVerbeux, lien)>
+			<!ELEMENT titre (#PCDATA)>
+			<!ELEMENT description (#PCDATA)>
+			<!ELEMENT lienVerbeux (#PCDATA)>
+			<!ELEMENT lien (#PCDATA)>
+]>
+
+<projets>
+	<projet>
+		<titre>CapEntreprise</titre>
+		<description>Java, Springboot</description>
+		<lienVerbeux>Lien vers gitHub</lienVerbeux>
+		<lien>https://github.com/David-DeSa-HB/cap_poec_springboot/tree/main</lien>
+	</projet>
+	<projet>
+		<titre>DevWebHB</titre>
+		<description>html css</description>
+		<lienVerbeux>Lien vers gitLab</lienVerbeux>
+		<lien>https://gitlab.com/Oshaori/humanbooster.git</lien>
+	</projet>
+		<projet>
+		<titre>Maquettage Figma</titre>
+		<description>figma</description>
+		<lienVerbeux>Lien vers figma</lienVerbeux>
+		<lien>https://www.figma.com/design/fZeWTZsgrx3CJ1EQ0uL8cn/DavidDesaBusinesCaseTotoEnergy?node-id=0-1ampt=evdObENDaBl5R5WL-0</lien>
+	</projet>
+</projets>
