@@ -30,6 +30,11 @@ a {
   text-decoration: none;
 }
 
+nav a {
+  transition: ease-in-out;
+  transition-duration: 0.5s;
+}
+
 nav a:hover {
   font-size: 120%;
   border: var(--black-color) solid 1px;
@@ -82,7 +87,6 @@ h1 {
   font-size: 96px;
   color: var(--blue-color);
   height: 140px;
-  width: 100%;
 }
 
 h2 {
@@ -91,6 +95,10 @@ h2 {
   font-size: 96px;
   color: var(--yellow-color);
   height: 140px;
+  width: 100%;
+}
+
+form {
   width: 100%;
 }
 
@@ -181,7 +189,7 @@ p.accueil {
   left: 25px;
   text-align: center;
   width: fit-content;
-  display: flex;
+  height: fit-content;
 }
 
 /* page à propos */
@@ -196,7 +204,6 @@ h1.aPropos {
 }
 
 p.aPropos {
-  color: var(--yellow-color);
   font-size: 24px;
 }
 
@@ -210,14 +217,15 @@ p.aPropos {
   width: 40%;
   height: 60%;
   padding: 3em;
-  position: relative;
-  left: 40px;
+  height: fit-content;
+  margin-left: 40px;
+  color: var(--yellow-color);
 }
 
 .aPropos-button {
   position: relative;
   bottom: -250px;
-  left: 20%;
+  left: 17%;
 }
 
 .aPropos-button-border {
@@ -229,15 +237,13 @@ p.aPropos {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--yellow-color);
 }
 
 .aPropos-button-border:hover {
-  width: 280px;
-  height: 80px;
-  font-size: 120%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  color: var(--blue-color);
+  background-color: var(--yellow-color);
+  border: var(--black-color) solid 2px;
 }
 
 /* page contact */
@@ -267,8 +273,9 @@ textarea.contact {
 .contact-border {
   border: none;
   border-radius: 20px;
-  width: 936px;
-  height: 646px;
+  width: 55%;
+  height: fit-content;
+  padding: 2em;
   background-color: var(--blue-color);
   display: flex;
   justify-content: center;
@@ -279,7 +286,7 @@ textarea.contact {
   background-color: var(--light-yellow-color);
   color: var(--black-color);
   font-size: 36px;
-  width: 757px;
+  width: 100%;
   height: 56px;
 }
 
@@ -287,7 +294,7 @@ textarea.contact {
   border: none;
   border-radius: 20px;
   background-color: var(--light-yellow-color);
-  width: 25%;
+  width: 40%;
   height: 56px;
 }
 
@@ -327,6 +334,16 @@ textarea.contact {
   font-size: 24px;
 }
 
+a.realisations {
+  transition: ease-in-out;
+  transition-duration: 0.5s;
+}
+
+a.realisations:hover {
+  font-size: 200%;
+  color: var(--light-yellow-color);
+}
+
 .realisations-button {
   border: var(--yellow-color) solid 2px;
   border-radius: 20px;
@@ -339,4 +356,115 @@ textarea.contact {
   color: var(--yellow-color);
   background-color: var(--black-color-transparent);
   font-size: 32px;
+}
+
+.realisations-button:hover {
+  background-color: var(--yellow-color);
+  color: var(--blue-color);
+}
+
+/* responsive */
+
+@media only screen and (max-device-width: 930px) {
+  header nav {
+    font-size: 16px;
+    gap: 10px;
+  }
+
+  footer nav {
+    font-size: 16px;
+    position: relative;
+    right: 20px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 42px;
+    line-height: 70px;
+    height: 70px;
+  }
+
+  h2 {
+    font-size: 30px;
+    line-height: 70px;
+  }
+
+  div.accueil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .accueil-image-right {
+    height: 600px;
+    width: 100%;
+  }
+
+  .accueil-image-right:hover {
+    border: var(--yellow-color) solid 5px;
+    border-radius: 70px;
+    padding: 0;
+    height: 600px;
+    width: 100%;
+  }
+
+  .accueil-image-left {
+    height: 600px;
+    width: 100%;
+  }
+
+  .accueil-image-left:hover {
+    border: var(--yellow-color) solid 5px;
+    border-radius: 70px;
+    padding: 0;
+    height: 600px;
+    width: 100%;
+  }
+
+  main.aPropos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+  }
+
+  .aPropos-text-border {
+    padding: 1em;
+    width: 80%;
+    margin: 0;
+    position: static;
+  }
+
+  .aPropos-button {
+    position: static;
+  }
+
+  #realisations-title {
+    font-size: 24px;
+    line-height: 70px;
+  }
+
+  #realisations-liste {
+    width: 90%;
+  }
+
+  .realisations {
+    width: 80%;
+  }
+
+  h1.contact {
+    font-size: 36px;
+    width: fit-content;
+    padding: 0.3em;
+    margin: 1em 0 1em 0;
+  }
+
+  .contact-form {
+    font-size: 24px;
+  }
+
+  .contact-form-button {
+    width: fit-content;
+    padding: 0 0.5em;
+  }
 }
